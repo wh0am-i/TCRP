@@ -1,0 +1,100 @@
+body{
+    background-color: #010101;
+    overflow-y: hidden;
+    overflow-x: hidden; 
+}
+.background{
+    z-index: 2;
+    width: 300vh;
+    height: 150vh;
+    transform: rotate(-65deg);
+    background-color: #252525;
+    position: relative;
+    left: 8%;
+}
+#divisor{
+    z-index: 3;
+    background-color: rgb(129, 129, 129);
+    width: 300vh;
+    height: 3vh;
+    transform: rotate(1deg);
+}
+.text{
+    z-index: 1;
+    color: white;
+    position: relative;
+    bottom: 184vh;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 14vh;
+    left: 5%;
+}
+#box{
+    left: 23%;
+    bottom: 10vh;
+    position: relative;
+    inline-size: 40vh;
+    overflow-wrap: break-word;
+}
+#box2{
+    z-index: 3;
+    left: 63%;
+    top: 66vh;
+    text-align: center;
+    position: relative;
+    inline-size: 50vh;
+    overflow-wrap: break-word;
+}
+#cont{
+    font-size: 260%;
+}
+h2{
+    font-size: 3.5vh;
+}
+img{
+    z-index: 0;
+    position: relative;
+    bottom: 202vh;
+}
+.contato{
+    text-align: center;
+    position: relative;
+    bottom: 215vh;
+    left: 27%;
+    color: white;
+    z-index: 4;
+}
+@media only screen and (max-width: 1600px){
+    .background{
+        left: 0%;
+    }
+    .contato{
+    left: 30%;
+    }
+}
+@media only screen and (max-width: 1400px){
+    #cont{
+        font-size: 220%;
+    }
+    #box2{
+        top: 70vh;
+        left: 67%;
+        inline-size: 40vh;
+    }
+    .contato{
+        left: 32%;
+    }
+}
+@media only screen and (max-height: 980px){
+    .contato{
+        bottom: 218vh;
+    }
+}
+@media only screen and (max-height: 950px){
+    .contato{
+        bottom: 225vh;
+    }
+}
